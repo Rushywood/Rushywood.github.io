@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 // REVERTED to single <br> for cleaner code. CSS will handle spacing.
                 `<div>Hello, I'm<br><span class="typed-name">Nitesh Kaushal</span><br><span class="role-text">An inquisitive Quant professional</span><br>building things for the market.</div>`
             ],
-            typeSpeed: 1, 
+            typeSpeed: 75, 
             backSpeed: 15,
-            startDelay: 0,
+            startDelay: 10,
             loop: false,
             showCursor: true,
             cursorChar: '_',
