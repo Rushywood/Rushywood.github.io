@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('typing-container')) {
         new Typed('#typing-container', {
             strings: [
-                // UPDATED: All text is now in one block for a continuous animation
+                // REVERTED to single <br> for cleaner code. CSS will handle spacing.
                 `<div>Hello, I'm<br><span class="typed-name">Nitesh Kaushal</span><br><span class="role-text">An inquisitive Quant professional</span><br>building things for the market.</div>`
             ],
-            typeSpeed: 10, // You can keep this faster speed
+            typeSpeed: 1, 
             backSpeed: 15,
             startDelay: 0,
             loop: false,

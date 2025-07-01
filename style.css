@@ -55,7 +55,8 @@ body {
     object-fit: cover;
     mix-blend-mode: screen;
     /* We removed opacity and added brightness to the filter instead */
-    filter: grayscale(100%) brightness(0.4); 
+    filter: grayscale(80%) brightness(0.5); 
+    opacity: 0.8;
     transition: transform 0.2s linear;
 }
 
@@ -74,15 +75,17 @@ body {
     text-align: center;
     padding: 3rem;
     min-height: 350px;
-    /* NEW: Tinted with your accent color for a blue glass effect */
     background: rgba(56, 189, 248, 0.15); 
-    backdrop-filter: blur(15px); /* The frosted glass effect */
+    backdrop-filter: blur(15px);
     border-radius: 20px;
-    /* NEW: A slightly stronger border using the accent color */
-    border: 1px solid rgba(56, 189, 248, 0.25); 
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    
+    /* CORRECTED: Using sensible values for a visible shadow and glow */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37), 
+                0 0 25px rgba(56, 189, 248, 0.25);
 
+    transition: box-shadow 0.3s ease;
+}
 .intro-box h1 {
     font-family: 'Major Mono Display', monospace; /* New Font */
     font-size: 2.8rem;
@@ -372,11 +375,15 @@ body {
     .menu-link { font-size: 2.5rem; }
 }
 /* ADD THIS NEW RULE for the typed name animation */
+/* Update this rule to control spacing */
 .typed-name {
     font-family: 'Major Mono Display', monospace;
     font-size: 2.8rem;
     letter-spacing: 0.1rem;
     color: var(--accent-color);
     text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
-    /* We remove margin for a smoother look within the typed text */
+    
+    /* ADD THESE LINES FOR SPACING */
+    display: block; /* Allows us to add vertical margins */
+    margin: 0.5rem 0; /* Adds 1.2rem of space above and below the name */
 }
