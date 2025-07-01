@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnnkayZone</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Londrina+Sketch&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <div class="hero-container">
+        <!-- Left side portrait image -->
+        <img src="formal_white.JPG" alt="my sketch" class="portrait-image">
+
+        <!-- Main content area for the text -->
+        <main class="main-content">
+            <div class="intro-box">
+                <div class="bracket top-left"></div>
+                <div class="bracket top-right"></div>
+                <div class="bracket bottom-left"></div>
+                <div class="bracket bottom-right"></div>
+                
+                <!-- The text will be inserted here by JavaScript -->
+                <div id="typing-container"></div>
+            </div>
+        </main>
+
+        <!-- Right fixed sidebar -->
+        <aside class="sidebar">
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="currentColor">
+                <path d="M78.2,14.6c-9.3-8.2-22.3-11.8-34.9-9.1c-1.4,0.3-2.6,1.4-2.8,2.8c-1.5,8.1,0.7,16.4,5.7,22.9c5.1,6.7,12.4,11.1,20.6,12.5c-6.1,3.4-12.8,5.3-19.8,5.4c-12.4,0.2-24.1-5.1-32-14.4C1.9,32.1-0.2,27.9,0,23.5c0.3-6.1,4.5-11.3,10.6-12.5c1.5-0.3,3,0.4,3.8,1.7c0.8,1.3,0.5,3-0.6,4.1c-4.5,4.3-7.2,10.2-7.2,16.5c0,2.1,0.4,4.2,1.2,6.1c11,12.9,28.8,17.4,44.1,10.9c9.8-4.1,17-12.3,20.2-22.1C80.2,21.6,79.5,17.8,78.2,14.6z"/>
+                <path d="M90.8,42.2c-1.1-1.4-2.9-1.9-4.4-1.2c-6.1,2.8-12.7,4.3-19.4,4.4c-13.4,0.2-26.2-5.3-35.3-15.5c-4.8-5.4-7.6-12.1-7.8-19.2c-0.1-2.9,1.7-5.5,4.4-6.3c2.7-0.8,5.5,0.5,6.8,3c0.4,0.8,0.6,1.7,0.6,2.6c0.4,7.2,3.9,13.8,9.5,18.4c12.2,10.1,28.9,13,43.2,7.2C89.5,54.7,92.2,48.5,90.8,42.2z"/>
+            </svg>
+            <a href="javascript:void(0);" class="scroll-indicator" id="scrollToNext">
+
+                <i class="fas fa-chevron-down"></i>
+                <i class="fas fa-chevron-down"></i>
+                
+            </a>
+            <div class="social-links">
+                <a href="mailto::niteshkaushal6@gmail.com" aria-label="Email"><i class="fas fa-at"></i></a>
+                <a href="https://www.linkedin.com/in/niteshkaushal?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BVpcSpz6LSyeFjnCa0ykLSg%3D%3D" aria-label="LinkedIN"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/niteshkaushal1/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/niteshkaushal_1" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                
+            </div>
+        </aside>
+
+        <!-- Blue navigation bar -->
+        <nav class="nav-bar">
+            <button class="hamburger-menu" id="open-menu-btn" aria-label="Open Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </div>
+
+    <!-- ==================== FULLSCREEN MENU OVERLAY ==================== -->
+    <div id="menu-overlay" class="menu-overlay">
+        <button id="close-menu-btn" class="close-menu-btn" aria-label="Close Menu">×</button>
+        <div class="menu-links">
+            <a href="#about-section" class="menu-link">About</a>
+            <a href="#skills-section" class="menu-link">Skills</a>
+            <a href="#projects-section" class="menu-link">Projects</a>
+            <a href="#trips-section" class="menu-link">Expeditions</a>
+            <a href="#contact-section" class="menu-link">Contact</a>
+        </div>
+    </div>
+
+
+    <!-- ==================== PAGE CONTENT (BELOW THE FOLD) ==================== -->
+    <div class="page-content">
+        <section id="about-section" class="content-section animated-section">
+            <h2 class="hover-heading">About Me</h2>
+            <p>A passionate Web Designer and Developer with a knack for creating intuitive, beautiful, and functional websites. I thrive on bringing ideas to life on the web and enjoy tackling new challenges.</p>
+        </section>
+
+        <section id="skills-section" class="content-section animated-section">
+            <h2 class="hover-heading">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">Web Design</div>
+                <div class="skill-item">HTML & CSS</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">Webflow</div>
+                <div class="skill-item">Figma</div>
+                <div class="skill-item">QA Testing</div>
+            </div>
+        </section>
+
+        <section id="projects-section" class="content-section animated-section">
+            <h2 class="hover-heading">My Projects</h2>
+             <div class="projects-grid">
+                <div class="project-card"><img src="https://via.placeholder.com/400x300.png?text=Project+One" alt="Project One"></div>
+                <div class="project-card"><img src="https://via.placeholder.com/400x300.png?text=Project+Two" alt="Project Two"></div>
+                <div class="project-card"><img src="https://via.placeholder.com/400x300.png?text=Project+Three" alt="Project Three"></div>
+            </div>
+        </section>
+
+        <section id="trips-section" class="content-section animated-section">
+            <h2 class="hover-heading">Expeditions</h2>
+            <p>Have next travel plan in mind? Let's talk! <a href="mailto:niteshkaushal6@gmail.com">niteshkaushal6@gmail.com</a></p>
+
+        </section>
+
+
+        <section id="contact-section" class="content-section animated-section">
+            <h2 class="hover-heading">Get In Touch</h2>
+            <p>Have something to discuss with me in mind? Let's talk! <a href="mailto:niteshkaushal6@gmail.com">niteshkaushal6@gmail.com</a></p>
+        </section>
+
+    </div>
+
+    <!-- Typed.js Library -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Main JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>
