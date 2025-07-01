@@ -108,6 +108,35 @@ body {
 /* Brackets are removed for the new design */
 .bracket { display: none; }
 
+/* ==================== BRANDING ==================== */
+.brand-container {
+    position: absolute;
+    top: 40px;
+    /* Positions it to the left of the nav bar and sidebar */
+    right: calc(var(--sidebar-width) + var(--nav-bar-width) + 40px);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 5;
+}
+
+.brand-logo {
+    width: 35px;
+    height: auto;
+}
+
+.brand-title {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-muted-color);
+    transition: color 0.3s ease;
+}
+
+.brand-container:hover .brand-title {
+    color: var(--accent-color);
+}
+
 /* ==================== SIDEBARS & NAVIGATION ==================== */
 /* .sidebar {
     position: fixed;
