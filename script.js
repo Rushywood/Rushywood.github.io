@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
             strings: [
                 `<p>Hello, I'm</p>
                  <h1 >Nitesh Kaushal</h1>
-                 <p class="role-text">A creative Web Designer Specialist </p>
-                 <p>building things for the internet.</p>`
+                 <p class="role-text">An inquisitive Quant Professional </p>
+                 <p>building things for the market.</p>`
             ],
             typeSpeed: 50,
             backSpeed: 15,
