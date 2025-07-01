@@ -4,14 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('typing-container')) {
         new Typed('#typing-container', {
             strings: [
-                `<p>Hello, I'm</p>
-                 <h1 >Nitesh Kaushal</h1>
-                 <p class="role-text">An inquisitive Quant Professional </p>
-                 <p>building things for the market.</p>`
+                // UPDATED: All text is now in one block for a continuous animation
+                `<div>Hello, I'm<br><span class="typed-name">Nitesh Kaushal</span><br><span class="role-text">An inquisitive Quant professional</span><br>building things for the market.</div>`
             ],
-            typeSpeed: 50,
+            typeSpeed: 10, // You can keep this faster speed
             backSpeed: 15,
-            startDelay: 500,
+            startDelay: 0,
             loop: false,
             showCursor: true,
             cursorChar: '_',

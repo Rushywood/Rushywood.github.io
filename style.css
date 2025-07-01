@@ -371,3 +371,12 @@ body {
     .page-content { padding: 3rem 5%; }
     .menu-link { font-size: 2.5rem; }
 }
+/* ADD THIS NEW RULE for the typed name animation */
+.typed-name {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 2.8rem;
+    letter-spacing: 0.1rem;
+    color: var(--accent-color);
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+    /* We remove margin for a smoother look within the typed text */
+}
