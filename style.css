@@ -278,6 +278,7 @@ body {
 .content-section {
     padding: 5rem 0;
     border-bottom: 1px solid var(--primary-color);
+    position: relative; /* This is required for positioning the link */
 }
 .content-section h2 {
     font-family: 'Major Mono Display', monospace;
@@ -298,6 +299,27 @@ body {
 .skill-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+}
+
+/* ADD THESE NEW RULES FOR THE RESUME LINK */
+.resume-link {
+    /* Positioning */
+    position: absolute;
+    bottom: 2.0rem; /* CHANGED: A smaller value moves it down below the content */
+    right: 0;
+
+    /* Styling */
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.9rem;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.resume-link:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 .projects-grid {
